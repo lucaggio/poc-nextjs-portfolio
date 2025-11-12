@@ -15,3 +15,39 @@ export async function getProjects(
   const { cache } = options;
   return apiFetch<ProjectT[]>("/projects", { cache });
 }
+
+/**
+ * POST: create a new project
+ */
+export async function createProject(data: {
+  name: string;
+  description: string;
+  image?: string;
+}): Promise<ProjectT> {
+  return apiFetch<ProjectT>("/projects", {
+    method: "POST",
+    body: data,
+  });
+}
+
+/**
+ * PUT: edit an existing project
+ */
+export async function updateProject(
+  id: string,
+  data: { name?: string; description?: string; image?: string }
+): Promise<ProjectT> {
+  return apiFetch<ProjectT>(`/projects/${id}`, {
+    method: "PUT",
+    body: data,
+  });
+}
+
+/**
+ * DELETE: delete a project by id
+ */
+export async function deleteProject(id: string): Promise<void> {
+  await apiFetch(`/projects/${id}`, {
+    method: "DELETE",
+  });
+}
