@@ -1,3 +1,5 @@
+import { AdminPanel } from "./components/AdminPanel";
+
 export default function AdminPage() {
-  return <h1>Admin</h1>;
+  return <AdminPanel />;
 }
