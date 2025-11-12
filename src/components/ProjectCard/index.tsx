@@ -1,11 +1,12 @@
 "use client";
 
-import * as S from "./ProjectCard.styles";
-import { ProjectT } from "@/types/project";
+import { ProjectCardPropsT } from "./ProjectCard.types";
 
-export default function ProjectCard({ project }: { project: ProjectT }) {
+import * as S from "./ProjectCard.styles";
+
+export default function ProjectCard({ project }: ProjectCardPropsT) {
   return (
-    <S.Card>
+    <S.Card href={`/projects/${project.id}`}>
       {project.image && <S.Image src={project.image} alt={project.name} />}
       <S.Title>{project.name}</S.Title>
       <S.Description>{project.description}</S.Description>

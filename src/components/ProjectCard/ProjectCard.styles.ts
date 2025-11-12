@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { styled } from "styled-components";
 
-export const Card = styled.div`
+export const Card = styled(Link)`
   display: block;
   background-color: ${({ theme }) => theme.colors.background};
   border-radius: 12px;

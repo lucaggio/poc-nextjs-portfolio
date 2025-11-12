@@ -1,10 +1,11 @@
 "use client";
 
-import * as S from "./ProjectList.styles";
-import { ProjectT } from "@/types/project";
 import ProjectCard from "../ProjectCard";
+import { ProjectListPropsT } from "./ProjectList.types";
 
-export function ProjectList({ projects }: { projects: ProjectT[] }) {
+import * as S from "./ProjectList.styles";
+
+export function ProjectList({ projects }: ProjectListPropsT) {
   return (
     <S.Grid>
       {projects.map((project) => (
