@@ -3,5 +3,6 @@ export interface ThemeI {
     primary: string;
     background: string;
     text: string;
+    border: string;
   };
 }
