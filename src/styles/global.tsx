@@ -21,7 +21,6 @@ export const GlobalStyles = createGlobalStyle`
   h4 {
     font-family: var(--font-geist-mono), var(--font-geist-sans), sans-serif;
     font-weight: 600;
-    margin-bottom: 0.5em;
   }
 
   a {

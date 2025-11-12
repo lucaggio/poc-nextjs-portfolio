@@ -5,5 +5,6 @@ export const theme: ThemeI = {
     primary: "#0070f3",
     background: "#ffffff",
     text: "#111111",
+    border: "#8C8C8C",
   },
 };
