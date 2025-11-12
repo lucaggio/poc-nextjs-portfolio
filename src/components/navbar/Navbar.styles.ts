@@ -11,7 +11,7 @@ export const Nav = styled.nav`
   margin-bottom: 0.5em;
 `;
 
-export const Logo = styled.h1`
+export const Logo = styled.h3`
   font-size: 1.2rem;
   font-weight: 600;
 `;
