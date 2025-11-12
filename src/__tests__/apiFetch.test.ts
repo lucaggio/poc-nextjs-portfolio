@@ -1,3 +1,15 @@
+/**
+ * @file apiFetch.test.ts
+ *
+ * Unit tests for the API client helper functions.
+ *
+ * These tests verify that:
+ * - `apiFetch()` calls the native fetch API with the correct URL and HTTP method.
+ * - It properly handles successful and failed responses.
+ * - `buildFetchOptions()` generates the expected configuration
+ *   for GET and POST requests, including cache and revalidation behavior.
+ */
+
 import { apiFetch, buildFetchOptions } from "@/lib/api/client";
 
 global.fetch = jest.fn();
