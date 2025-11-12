@@ -1,0 +1,16 @@
+export const SKILLS: string[] = [
+  "React.js",
+  "TypeScript",
+  "Redux Toolkit",
+  "Styled Components",
+  "Zustand",
+  "Vite / Webpack",
+  "REST API Integration",
+  "Performance Optimization",
+  "State Management",
+  "Responsive Design",
+  "CSS / SCSS",
+  "Styled Components",
+  "Accessibility (a11y)",
+  "Git",
+];

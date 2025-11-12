@@ -1,3 +1,7 @@
+import { AboutContent } from "./components/AboutContent";
+
+export const revalidate = false;
+
 export default function AboutPage() {
-  return <h1>About</h1>;
+  return <AboutContent />;
 }
