@@ -17,6 +17,13 @@ export async function getProjects(
 }
 
 /**
+ * GET: fetch single project
+ */
+export async function getSingleProject(id: string): Promise<ProjectT> {
+  return await apiFetch<ProjectT>(`/projects/${id}`);
+}
+
+/**
  * POST: create a new project
  */
 export async function createProject(data: {
