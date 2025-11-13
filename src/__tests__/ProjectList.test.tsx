@@ -9,7 +9,7 @@
 
 import { render, screen } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
-import { ProjectList } from "@/components/ProjectList";
+import ProjectList from "@/components/ProjectList";
 import { theme } from "@/theme/theme";
 
 const mockProjects = [

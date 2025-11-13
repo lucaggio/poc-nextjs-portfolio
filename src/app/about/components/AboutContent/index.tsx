@@ -4,7 +4,7 @@ import { SKILLS } from "./AboutContext.constants";
 
 import * as S from "./AboutContent.styles";
 
-export function AboutContent() {
+export default function AboutContent() {
   return (
     <S.Container>
       <S.Avatar

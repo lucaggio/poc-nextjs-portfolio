@@ -14,7 +14,7 @@ import { ProjectFormT } from "./AdminPanel.types";
 
 import * as S from "./AdminPanel.styles";
 
-export function AdminPanel(): JSX.Element {
+export default function AdminPanel(): JSX.Element {
   const [projects, setProjects] = useState<ProjectT[]>([]);
   const [editingId, setEditingId] = useState<string | null>(null);
 

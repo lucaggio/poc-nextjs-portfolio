@@ -5,7 +5,7 @@ import { ProjectListPropsT } from "./ProjectList.types";
 
 import * as S from "./ProjectList.styles";
 
-export function ProjectList({ projects }: ProjectListPropsT) {
+export default function ProjectList({ projects }: ProjectListPropsT) {
   return (
     <S.Grid>
       {projects.map((project) => (

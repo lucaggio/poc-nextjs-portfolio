@@ -1,7 +1,7 @@
 "use client";
 
 import { JSX, useEffect, useState } from "react";
-import { ProjectList } from "@/components/ProjectList";
+import ProjectList from "@/components/ProjectList";
 import { getProjects } from "@/lib/api/projects.api";
 import { ProjectT } from "@/types/project";
 import { handleFetchError } from "@/utils/errors.utils";
@@ -10,7 +10,7 @@ import { HomeProjectsPropsT } from "./HomeProjects.types";
 
 import * as S from "./HomeProjects.styles";
 
-export function HomeProjects({
+export default function HomeProjects({
   initialProjects,
 }: HomeProjectsPropsT): JSX.Element {
   const [projects, setProjects] = useState<ProjectT[]>(initialProjects);
