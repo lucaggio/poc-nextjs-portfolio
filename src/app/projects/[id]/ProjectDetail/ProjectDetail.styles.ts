@@ -1,4 +1,4 @@
-import { keyframes, styled } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Image from "next/image";
 
 export const Container = styled.div`

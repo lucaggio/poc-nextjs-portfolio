@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { styled } from "styled-components";
+import styled from "styled-components";
 
 export const Card = styled(Link)`
   display: block;
